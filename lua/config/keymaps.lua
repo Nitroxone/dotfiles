@@ -8,9 +8,9 @@ local opts = { noremap = true, silent = true }
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
--- New tab
-keymap.set("n", "<tab><right>", ":tabnext<Return>", opts)
-keymap.set("n", "<tab><left>", ":tabprev<Return>", opts)
+-- Buffers
+keymap.set("n", "b<right>", ":bn<Return>", opts)
+keymap.set("n", "b<left>", ":bp<Return>", opts)
 
 -- Moving around windows
 keymap.set("n", "s<left>", "<C-w>h")
